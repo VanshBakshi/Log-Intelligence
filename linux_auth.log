@@ -1,0 +1,10 @@
+2026-10-01 19:00:01 INFO sshd user=root Accepted password from 10.10.1.5
+2026-10-01 19:00:21 WARNING sshd user=admin Failed login from 10.10.1.99
+2026-10-01 19:00:24 WARNING sshd user=admin Failed login from 10.10.1.99
+2026-10-01 19:00:27 WARNING sshd user=admin Failed login from 10.10.1.99
+2026-10-01 19:00:30 ERROR sshd user=admin Authentication failed from 10.10.1.99
+2026-10-01 19:01:10 INFO sshd user=vansh Accepted publickey from 10.10.1.5
+2026-10-01 19:02:11 INFO sudo user=vansh Command executed
+2026-10-01 19:03:40 WARNING sshd user=test Invalid password from 172.16.2.44
+2026-10-01 19:04:10 ERROR sshd user=test Unauthorized access denied from 172.16.2.44
+2026-10-01 19:04:45 CRITICAL privilege escalation attempt blocked from 172.16.2.44

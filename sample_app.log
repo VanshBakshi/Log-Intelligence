@@ -1,0 +1,21 @@
+2026-10-01 18:01:12 INFO Application started successfully
+2026-10-01 18:01:15 INFO user=vansh Request received from 192.168.1.20
+2026-10-01 18:01:18 DEBUG Database connection pool initialized
+2026-10-01 18:01:25 INFO GET /dashboard 200 in 83ms
+2026-10-01 18:02:01 WARNING Cache miss rate above threshold
+2026-10-01 18:02:05 INFO GET /api/users 200 in 91ms
+2026-10-01 18:02:18 ERROR Database timeout from 192.168.1.40
+2026-10-01 18:02:20 ERROR Database timeout from 192.168.1.40
+2026-10-01 18:02:21 ERROR Database timeout from 192.168.1.40
+2026-10-01 18:02:30 INFO Request recovered successfully
+2026-10-01 18:03:10 WARNING user=admin Failed login from 10.0.0.55
+2026-10-01 18:03:12 WARNING user=admin Failed login from 10.0.0.55
+2026-10-01 18:03:14 WARNING user=admin Failed login from 10.0.0.55
+2026-10-01 18:03:16 ERROR user=admin Authentication failed from 10.0.0.55
+2026-10-01 18:04:01 INFO User session created
+2026-10-01 18:04:20 ERROR SQL injection pattern blocked from 10.0.0.88
+2026-10-01 18:04:44 CRITICAL ransomware signature detected in uploaded file
+2026-10-01 18:05:02 INFO Security scan completed
+2026-10-01 18:05:20 DEBUG Background worker heartbeat
+2026-10-01 18:06:11 ERROR Payment service timeout
+2026-10-01 18:06:15 INFO Payment retry scheduled

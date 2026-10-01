@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log Intelligence</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <div>
+            <p class="eyebrow">SECURITY ANALYTICS</p>
+            <h1>Log Intelligence</h1>
+            <p class="subtitle">Analyze Windows, Linux and application logs with Python.</p>
+        </div>
+        <div class="status"><span></span> Engine Ready</div>
+    </header>
+
+    <section class="control-card">
+        <div class="controls">
+            <select id="sample">
+                <option value="sample_app.log">Sample Application Log</option>
+                <option value="linux_auth.log">Linux Authentication Log</option>
+                <option value="windows_security.log">Windows Security Log</option>
+            </select>
+            <input type="file" id="file" accept=".log,.txt,.csv">
+            <button onclick="analyze()">Analyze Logs</button>
+            <button class="secondary" onclick="downloadReport()">Export CSV</button>
+        </div>
+        <p id="message">Choose a sample log or upload your own text log.</p>
+    </section>
+
+    <section class="stats">
+        <div class="stat"><span>Total Events</span><strong id="total">0</strong></div>
+        <div class="stat"><span>Anomalies</span><strong id="anomalies">0</strong></div>
+        <div class="stat"><span>Unique IPs</span><strong id="uniqueIps">0</strong></div>
+        <div class="stat"><span>File</span><strong id="filename">—</strong></div>
+    </section>
+
+    <section class="grid">
+        <div class="panel">
+            <div class="panel-title">
+                <h2>Severity Breakdown</h2>
+            </div>
+            <div id="levels" class="bars"></div>
+        </div>
+        <div class="panel">
+            <div class="panel-title">
+                <h2>Top IP Addresses</h2>
+            </div>
+            <div id="ips" class="list"></div>
+        </div>
+    </section>
+
+    <section class="panel">
+        <div class="panel-title">
+            <h2>Event Stream</h2>
+            <input id="search" placeholder="Search message, IP, user..." oninput="renderTable()">
+        </div>
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Line</th><th>Time</th><th>Level</th><th>IP</th>
+                        <th>User</th><th>Message</th><th>Anomaly</th>
+                    </tr>
+                </thead>
+                <tbody id="events"></tbody>
+            </table>
+        </div>
+    </section>
+</div>
+<script src="/static/app.js"></script>
+</body>
+</html>

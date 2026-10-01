@@ -1,0 +1,10 @@
+2026-10-01 17:10:00 INFO Windows EventLog Service started
+2026-10-01 17:11:02 INFO user=SYSTEM Service installed successfully
+2026-10-01 17:12:15 WARNING user=Administrator Failed login from 192.168.0.90
+2026-10-01 17:12:18 WARNING user=Administrator Failed login from 192.168.0.90
+2026-10-01 17:12:21 WARNING user=Administrator Failed login from 192.168.0.90
+2026-10-01 17:12:25 ERROR user=Administrator Authentication failed from 192.168.0.90
+2026-10-01 17:13:04 INFO Windows Defender scan started
+2026-10-01 17:14:02 CRITICAL malware detected in C:\Temp\suspicious.exe
+2026-10-01 17:15:30 ERROR Network service unavailable from 192.168.0.10
+2026-10-01 17:16:00 INFO Windows Defender quarantine completed
